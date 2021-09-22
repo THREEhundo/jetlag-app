@@ -1,6 +1,7 @@
-import React from 'react';
-import './App.css';
-import { PhaseResponseCurve } from './components/PhaseResponseCurve';
+import React from "react";
+import "./App.css";
+import CountryBarGraph from "./components/CountryBarGraph";
+import { PhaseResponseCurve } from "./components/PhaseResponseCurve";
 // import { PhaseShift } from './components/PhaseShift';
 
 function App() {
@@ -17,11 +18,10 @@ function App() {
   //   ];
   return (
     <div className="App">
-    <PhaseResponseCurve />
+      <CountryBarGraph />
+      <PhaseResponseCurve />
       {/* <PhaseShift data={losAngeles} /> */}
-      <header className="App-header">
-        JETLAG
-      </header>
+      <header className="App-header">JETLAG</header>
     </div>
   );
 }
