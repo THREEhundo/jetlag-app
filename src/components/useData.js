@@ -8,7 +8,7 @@ export const useData = () => {
   const [data, setData] = useState();
   useEffect(() => {
     const row = (d) => {
-      d.Population = +d["2020"]; // + is shorthand for parse float string -> num
+      d.Population = +d["2020"] * 1000; // + is shorthand for parse float string -> num
       return d;
     };
     csv(countryURL, row)
