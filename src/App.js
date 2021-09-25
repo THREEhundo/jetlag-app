@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import CountryBarGraph from "./components/CountryBarGraph";
+import CountryBarGraph from "./components/BarChart/CountryBarGraph";
+import LineChart from "./components/LineChart/LineChart";
 import { PhaseResponseCurve } from "./components/PhaseResponseCurve";
 // import { PhaseShift } from './components/PhaseShift';
 
@@ -18,6 +18,7 @@ function App() {
   //   ];
   return (
     <div className="App">
+      <LineChart />
       <CountryBarGraph />
       <PhaseResponseCurve />
       {/* <PhaseShift data={losAngeles} /> */}

@@ -1,14 +1,15 @@
 import React from "react";
+import "../../App.css";
 import { format, scaleBand, scaleLinear, max } from "d3";
-import useWindowWidth from "./useWindowWidth";
-import { useData } from "./useData";
+import useWindowWidth from "../hooks/useWindowWidth";
+import { useData } from "../hooks/useData";
 import { AxisBottom } from "./AxisBottom";
 import { AxisLeft } from "./AxisLeft";
 import { Bars } from "./Bars";
 
 const CountryBarGraph = () => {
   const data = useData();
-  // const [windowWidth, setWindowWidth] = useState(undefined);
+
   let height = 500,
     width = useWindowWidth() - 160,
     margin = { top: 20, left: 220, right: 20, bottom: 80 },

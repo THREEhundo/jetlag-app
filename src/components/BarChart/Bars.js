@@ -1,8 +1,7 @@
-import React from "react";
-import "../App.css";
+import "../../App.css";
 
 export const Bars = ({ data, xScale, yScale, xValue, yValue, tooltipFormat }) =>
-  data.map((d, i) => (
+  data.map((d) => (
     <rect
       className="bar"
       key={yValue(d)}
